@@ -68,7 +68,6 @@ export default function NavBar() {
                                 </div>
                             </div>
                             <div>
-                                <SocialIcon url="mailto:keithr.sinclair@gmail.com" className="mr-3" fgColor="#000" style={{ height: 35, width: 35 }} />
                                 <SocialIcon url="https://linkedin.com/in/keith-sinclair-b25b93135" className="mr-3" target="_blank" fgColor="#fff" style={{ height: 35, width: 35 }} />
                                 <SocialIcon url="https://github.com/KeithRSinclair" className=" mr-3" target="_blank" fgColor="#fff" style={{ height: 35, width: 35 }} />
                                 <SocialIcon network="whatsapp" url="https://wa.me/+27713630284" className=" mr-3" target="_blank" style={{ height: 35, width: 35 }} />
