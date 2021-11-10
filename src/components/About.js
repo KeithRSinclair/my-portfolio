@@ -4,6 +4,7 @@ import bgImage from "../logo/clouds.svg";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 
+
 const builder = imageUrlBuilder(sanityClient);
 
 function urlFor(source) {
