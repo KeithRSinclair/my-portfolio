@@ -29,7 +29,7 @@ export default function About() {
 
     return (<main>
         <img src={bgImage} alt="endless clouds" className="absolute w-full" style={{ backgroundColor: "#708090", opacity: 0.1, }} />
-        <h1 className="text-4xl font-bold text-blue-900 font-serif text-center" style={{ textShadow: "#000 2px 2px 3px" }}>About Me</h1>
+        <h1 className="text-2xl sm:text-4xl font-bold text-blue-900 font-serif text-center" style={{ textShadow: "#000 2px 2px 3px" }}>About Me</h1>
         <div className="p-10 lg:pt-10 container mx-auto relative">
             <section className="bg-blue-800 rounded-lg shadow-2xl lg:flex p-20" >
                 <img src={urlFor(author.authorImage).url()} className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8" alt={author.name} />
