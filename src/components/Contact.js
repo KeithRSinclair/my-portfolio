@@ -20,63 +20,60 @@ export default function Contact() {
         e.target.reset();
     };
 
-    return (<div>
+    return (<main>
 
         <div className="p-10 lg:pt-20 px-5">
-            <section className="bg-gray-100 rounded-lg shadow-2xl px-5 py-5" >
+            <section className="bg-white rounded-lg shadow-2xl px-5 py-5" >
                 <MailIcon className="h-12" />
-                <div className="text-lg flex flex-col justify-center">
-                    <h2 className="text-3xl sm:text-4xl mb-6" ><span>Contact Me</span></h2>
-                    <form onSubmit={sendEmail} className="w-full max-w-sm">
-                        <div className="mb-6">
-                            <div className="md:w-1/3">
-                                <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" htmlFor="inline-full-name">
-                                    Name
-                                </label>
-                            </div>
-                            <div className="md:w-3/3">
-                                <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" name="name" required />
-                            </div>
+                <h2 className="text-3xl sm:text-4xl mb-6" ><span>Contact Me</span></h2>
+                <form onSubmit={sendEmail} >
+                    <div className="mb-6">
+                        <div className="md:w-1/3">
+                            <label className="block text-gray-600 font-bold md:text-center mb-1 md:mb-0 " htmlFor="inline-full-name">
+                                Name
+                            </label>
                         </div>
-                        <div className="mb-6">
-                            <div className="md:w-1/3">
-                                <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" htmlFor="inline-email">
-                                    E-mail
-                                </label>
-                            </div>
-                            <div className="md:w-3/3">
-                                <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-email" type="email" name="email" required />
-                            </div>
+                        <div className="md:w-2/3">
+                            <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2  text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" name="name" required />
                         </div>
-                        <div className="mb-6">
-                            <div className="md:w-1/3">
-                                <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" htmlFor="inline-subject">
-                                    Subject
-                                </label>
-                            </div>
-                            <div className="md:w-3/3">
-                                <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-subject" type="text" name="subject" required />
-                            </div>
+                    </div>
+                    <div className="mb-6">
+                        <div className="md:w-1/3">
+                            <label className="block text-gray-600 font-bold md:text-center mb-1 md:mb-0" htmlFor="inline-email">
+                                E-mail
+                            </label>
                         </div>
-                        <div className="mb-6">
-                            <div className="md:w-1/3">
-                                <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" htmlFor="inline-message">
-                                    Message
-                                </label>
-                            </div>
-                            <div className="md:w-3/3">
-                                <textarea className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" rows="8" id="inline-message" type="text" name="message" required />
-                            </div>
+                        <div className="md:w-2/3">
+                            <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-email" type="email" name="email" required />
                         </div>
+                    </div>
+                    <div className="mb-6">
+                        <div className="md:w-1/3">
+                            <label className="block text-gray-600 font-bold md:text-center mb-1 md:mb-0" htmlFor="inline-subject">
+                                Subject
+                            </label>
+                        </div>
+                        <div className="md:w-2/3">
+                            <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-subject" type="text" name="subject" required />
+                        </div>
+                    </div>
+                    <div className="mb-6">
+                        <div className="md:w-1/3">
+                            <label className="block text-gray-600 font-bold md:text-center mb-1 md:mb-0" htmlFor="inline-message">
+                                Message
+                            </label>
+                        </div>
+                        <div className="md:w-2/3">
+                            <textarea className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" rows="8" id="inline-message" type="text" name="message" required />
+                        </div>
+                    </div>
+                    <button className="bg-blue-600 hover:bg-blue-700 text-gray-800 font-bold py-2 px-8 rounded inline-flex " type="submit"><span>Send &nbsp;</span><PaperAirplaneIcon className="h-6 transform rotate-90" /></button>
 
-                        <div className="md:flex md:items-center">
-                            <button className="bg-blue-600 hover:bg-blue-700 text-gray-800 font-bold py-2 px-8 rounded inline-flex items-center" type="submit"><span>Send</span><PaperAirplaneIcon className="h-6 transform rotate-90" /></button>
-                        </div>
-                    </form>
-                </div>
+                </form>
+
             </section>
         </div>
-    </div >
+    </main >
 
 
     )
