@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import bgImage from "../logo/circuit.svg";
 import sanityClient from "../client";
 import { Link } from "react-router-dom";
 
@@ -15,9 +14,8 @@ export default function Post() {
         }`).then((data) => setPost(data)).catch(console.error)
     }, []);
     return (<main>
-        <img src={bgImage} alt="circuit board" className="absolute object-cover w-full h-full" style={{ backgroundColor: "#708090", opacity: 0.1, }} />
         <section>
-            <h1 className="text-4xl font-bold text-blue-900 font-serif text-center" style={{ textShadow: "#000 2px 2px 3px" }}>My Blogs</h1>
+            <h1 className="text-2xl sm:text-4xl font-bold text-blue-900 font-serif text-center pt-5">My Blogs</h1>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 p-2">
                 {postData && postData.map((post, index) => (
                     <article>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client";
-import bgImage from "../logo/glamorous.svg";
+
 
 export default function Project() {
     const [projectData, setProjectData] = useState(null);
@@ -18,10 +18,9 @@ export default function Project() {
         }`).then((data) => setProjectData(data)).catch(console.error);
     }, []);
 
-    return (<main>
-        <img src={bgImage} alt="circuit board" className="absolute object-cover w-full h-full" style={{ backgroundColor: "#708090", opacity: 0.1, }} />
+    return (<main >
         <section>
-            <h1 className="text-4xl font-bold text-blue-900 font-serif text-center" style={{ textShadow: "#000 2px 2px 3px" }}>My Projects</h1>
+            <h1 className="text-2xl sm:text-4xl font-bold text-blue-900 font-serif text-center pt-5" >My Projects</h1>
             <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 p-2">
                 {projectData && projectData.map((project, index) => (
                     <article className="relative rounded-lg shadow-xl bg-white p-16">

@@ -4,7 +4,7 @@ import logo from '../logo/logo.svg';
 import { SocialIcon } from "react-social-icons";
 
 const navigation = [
-    { name: 'Blog Posts', href: '/post' },
+    { name: 'Blogs', href: '/post' },
     { name: 'Projects', href: '/project' },
     { name: 'About Me', href: '/about' },
     { name: 'Contact Me', href: '/contact' },
