@@ -34,7 +34,7 @@ export default function About() {
             <section className="bg-blue-800 rounded-lg shadow-2xl lg:flex p-20" >
                 <img src={urlFor(author.authorImage).url()} className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8" alt={author.name} />
                 <div className="text-lg flex flex-col justify-center">
-                    <h2 className="text-6xl text-white mb-4 pr-3 text-center sm:text-left sm:text-4xl" ><span>{author.name}</span></h2>
+                    <h2 className="text-6xl sm:text-4xl text-white mb-4 pr-3 text-center sm:text-left" style={{ textShadow: "#000 2px 2px 3px" }} ><span>{author.name}</span></h2>
                     <div>
                         <BlockContent blocks={author.bio} projectId="wm77me1p" dataset="production" />
                     </div>
