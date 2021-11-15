@@ -22,11 +22,11 @@ export default function Contact() {
 
     return (<div>
 
-        <div className="p-10 lg:pt-10 container mx-auto relative">
-            <section className="bg-gray-100 rounded-lg shadow-2xl lg:flex p-20" >
+        <div className="p-10 lg:pt-20 px-5">
+            <section className="bg-gray-100 rounded-lg shadow-2xl px-5 py-5" >
                 <MailIcon className="h-12" />
                 <div className="text-lg flex flex-col justify-center">
-                    <h1 className="text-4xl mb-6" ><span>Contact Me</span></h1>
+                    <h2 className="text-3xl sm:text-4xl mb-6" ><span>Contact Me</span></h2>
                     <form onSubmit={sendEmail} className="w-full max-w-sm">
                         <div className="mb-6">
                             <div className="md:w-1/3">
