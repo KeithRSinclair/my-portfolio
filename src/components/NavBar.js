@@ -4,7 +4,6 @@ import logo from '../logo/logo.svg';
 import { SocialIcon } from "react-social-icons";
 
 const navigation = [
-    { name: 'Home', href: '/', MenuIcon: '<XIcon className="block h-6 w-6" />' },
     { name: 'Blog Posts', href: '/post' },
     { name: 'Projects', href: '/project' },
     { name: 'About Me', href: '/about' },
