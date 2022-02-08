@@ -1,6 +1,6 @@
 import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import logo from '../logo/logo.svg';
+import logo from '../logo/logo.png';
 import { SocialIcon } from "react-social-icons";
 
 const navigation = [
